@@ -13,7 +13,12 @@
 </head>
 <body>
     <div id="app">
-       <p> Meu nome é: {{ name }} e minha idade é {{ age }} </p>
+       <form id"app-form>
+           <input type="text" v-model="input_name" placeholder="Digite seu nome">
+           <input type="submit" value="Enviar" v-on:click="submitForm">
+       </form>
+       <p> Meu nome é: {{ name }}  </p>
+       <p>Data binding: {{ input_name }}</p>
     </div>
 </body>
 </html>
